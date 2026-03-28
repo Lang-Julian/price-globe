@@ -174,9 +174,9 @@ export const products: Product[] = [
       usa:      { base: 77,    inflation: 0.041 },
       germany:  { base: 59,    inflation: 0.055 },
       thailand: { base: 42,    inflation: 0.015 },
-      japan:    { base: 40,    inflation: 0.03  }, // ¥6000 avg
-      mexico:   { base: 30,    inflation: 0.05  }, // 520 MXN
-      portugal: { base: 45,    inflation: 0.04  }, // €42
+      japan:    { base: 43,    inflation: 0.03  }, // ¥6500 avg
+      mexico:   { base: 65,    inflation: 0.05  }, // 1120 MXN median
+      portugal: { base: 48,    inflation: 0.04  }, // €45
     }, noise: 0.02 }),
   },
   {
@@ -184,14 +184,14 @@ export const products: Product[] = [
     name: "Inexpensive Meal",
     nameDE: "Günstiges Essen (Lokal / Street Food)",
     unit: "USD", category: "gastro",
-    insight: "Mexiko Taco-Stand $2.30, Thailand Pad Thai $1.70, Japan Ramen $5.40 — USA $20 ist 12x Thailand",
+    insight: "Mexiko Tacos $3.50, Thailand Pad Thai $1.70, Japan Ramen $6 — USA $20 ist 12x Thailand",
     data: gen({ prices: {
       usa:      { base: 20,    inflation: 0.041 },
       germany:  { base: 7.50,  inflation: 0.055 },
       thailand: { base: 1.70,  inflation: 0.015 },
-      japan:    { base: 5.40,  inflation: 0.03  }, // ¥800 ramen/gyudon
-      mexico:   { base: 2.30,  inflation: 0.05  }, // 40 MXN tacos
-      portugal: { base: 7.00,  inflation: 0.04  }, // €6.50 prato do dia
+      japan:    { base: 6.00,  inflation: 0.03  }, // ¥900 ramen/gyudon
+      mexico:   { base: 5.00,  inflation: 0.05  }, // 86 MXN fonda/tacos
+      portugal: { base: 10.00, inflation: 0.04  }, // €9.25 prato do dia
     }, noise: 0.02 }),
   },
   {
@@ -199,14 +199,14 @@ export const products: Product[] = [
     name: "McMeal / Fast Food Combo",
     nameDE: "McMeal / Fast Food Menü",
     unit: "USD", category: "gastro",
-    insight: "Big Mac Index: Japan $4.40 vs. USA $12 zeigt die massivste Kaufkraft-Verzerrung aller G7-Länder",
+    insight: "Big Mac Index: Japan $5 vs. USA $12 zeigt die massivste Kaufkraft-Verzerrung aller G7-Länder",
     data: gen({ prices: {
       usa:      { base: 12,    inflation: 0.04  },
       germany:  { base: 10.30, inflation: 0.05  },
       thailand: { base: 6.15,  inflation: 0.015 },
-      japan:    { base: 4.40,  inflation: 0.02  }, // ¥650
-      mexico:   { base: 5.20,  inflation: 0.05  }, // 90 MXN
-      portugal: { base: 8.10,  inflation: 0.04  }, // €7.50
+      japan:    { base: 5.00,  inflation: 0.02  }, // ¥750
+      mexico:   { base: 10.00, inflation: 0.05  }, // 172 MXN
+      portugal: { base: 9.50,  inflation: 0.04  }, // €8.80
     }, noise: 0.01 }),
   },
 
@@ -216,14 +216,14 @@ export const products: Product[] = [
     name: "Cappuccino",
     nameDE: "Cappuccino (Café)",
     unit: "USD", category: "drinks",
-    insight: "Portugals Café-Kultur: Espresso $1.20, Cappuccino $2.50 — halb so teuer wie DE, ein Drittel von USA",
+    insight: "Portugals Café-Kultur: Cappuccino $2.15 — halb so teuer wie DE ($4), ein Drittel von USA ($5.37)",
     data: gen({ prices: {
       usa:      { base: 5.37,  inflation: 0.041, season: "d_default" },
       germany:  { base: 4.00,  inflation: 0.055, season: "d_default" },
       thailand: { base: 2.65,  inflation: 0.015, season: "d_default" },
-      japan:    { base: 3.20,  inflation: 0.03,  season: "d_default" }, // ¥480
-      mexico:   { base: 2.90,  inflation: 0.05,  season: "d_default" }, // 50 MXN
-      portugal: { base: 2.50,  inflation: 0.04,  season: "d_default" }, // €2.30
+      japan:    { base: 3.30,  inflation: 0.03,  season: "d_default" }, // ¥490
+      mexico:   { base: 3.90,  inflation: 0.05,  season: "d_default" }, // 67 MXN
+      portugal: { base: 2.15,  inflation: 0.04,  season: "d_default" }, // €2.00
     }, noise: 0.02 }),
   },
   {
@@ -231,14 +231,14 @@ export const products: Product[] = [
     name: "Domestic Beer (0.5l, Restaurant)",
     nameDE: "Bier lokal (0,5l, Restaurant)",
     unit: "USD", category: "drinks",
-    insight: "Mexiko: $2.10 für Corona/Modelo im Restaurant. Portugal: Super Bock $2.40. Beide schlagen DE $4.60",
+    insight: "Portugal Super Bock $2.95, Mexiko Corona $3.60 im Restaurant — DE Pils $4.60, USA Draft $6.00",
     data: gen({ prices: {
       usa:      { base: 6.00,  inflation: 0.04,  season: "d_default" },
       germany:  { base: 4.60,  inflation: 0.045, season: "d_default" },
       thailand: { base: 2.80,  inflation: 0.015, season: "d_default" },
-      japan:    { base: 3.70,  inflation: 0.03,  season: "d_default" }, // ¥550 draft
-      mexico:   { base: 2.10,  inflation: 0.05,  season: "d_default" }, // 36 MXN
-      portugal: { base: 2.40,  inflation: 0.04,  season: "d_default" }, // €2.20
+      japan:    { base: 4.00,  inflation: 0.03,  season: "d_default" }, // ¥600 draft
+      mexico:   { base: 3.60,  inflation: 0.05,  season: "d_default" }, // 62 MXN
+      portugal: { base: 2.95,  inflation: 0.04,  season: "d_default" }, // €2.75
     }, noise: 0.02 }),
   },
   {
@@ -268,9 +268,9 @@ export const products: Product[] = [
       usa:      { base: 164,   inflation: 0.05,  season: "h_usa" },
       germany:  { base: 113,   inflation: 0.06,  season: "h_germany" },
       thailand: { base: 32,    inflation: 0.03,  season: "h_thailand" },
-      japan:    { base: 70,    inflation: 0.04,  season: "h_japan" },     // ¥10,500
-      mexico:   { base: 50,    inflation: 0.05,  season: "h_mexico" },    // 860 MXN
-      portugal: { base: 80,    inflation: 0.06,  season: "h_portugal" },  // €74
+      japan:    { base: 75,    inflation: 0.04,  season: "h_japan" },     // ¥11,250
+      mexico:   { base: 90,    inflation: 0.05,  season: "h_mexico" },    // 1550 MXN median
+      portugal: { base: 95,    inflation: 0.06,  season: "h_portugal" },  // €88
     }, noise: 0.03 }),
   },
   {
@@ -283,9 +283,9 @@ export const products: Product[] = [
       usa:      { base: 493,   inflation: 0.06,  season: "h_usa" },
       germany:  { base: 350,   inflation: 0.07,  season: "h_germany" },
       thailand: { base: 140,   inflation: 0.04,  season: "h_thailand" },
-      japan:    { base: 180,   inflation: 0.05,  season: "h_japan" },     // ¥27,000
-      mexico:   { base: 160,   inflation: 0.06,  season: "h_mexico" },    // Cancún/CDMX avg
-      portugal: { base: 200,   inflation: 0.07,  season: "h_portugal" },  // €185 Lissabon
+      japan:    { base: 200,   inflation: 0.05,  season: "h_japan" },     // ¥30,000
+      mexico:   { base: 250,   inflation: 0.06,  season: "h_mexico" },    // Cancún/CDMX avg
+      portugal: { base: 250,   inflation: 0.07,  season: "h_portugal" },  // €230 Lissabon
     }, noise: 0.04 }),
   },
   {
@@ -298,9 +298,9 @@ export const products: Product[] = [
       usa:      { base: 35,    inflation: 0.04,  season: "h_usa" },
       germany:  { base: 32,    inflation: 0.05,  season: "h_germany" },
       thailand: { base: 8.40,  inflation: 0.025, season: "h_thailand" },
-      japan:    { base: 20,    inflation: 0.03,  season: "h_japan" },     // ¥3000 capsule
-      mexico:   { base: 9,     inflation: 0.04,  season: "h_mexico" },    // 155 MXN
-      portugal: { base: 22,    inflation: 0.05,  season: "h_portugal" },  // €20
+      japan:    { base: 23,    inflation: 0.03,  season: "h_japan" },     // ¥3500 capsule
+      mexico:   { base: 22,    inflation: 0.04,  season: "h_mexico" },    // 380 MXN
+      portugal: { base: 23,    inflation: 0.05,  season: "h_portugal" },  // €21
     }, noise: 0.03 }),
   },
   {
@@ -308,14 +308,14 @@ export const products: Product[] = [
     name: "Airbnb (1 Bedroom, central)",
     nameDE: "Airbnb (1 Zimmer, zentral)",
     unit: "USD", category: "hotel",
-    insight: "CDMX Airbnb $35/Nacht — günstiger als Bangkok ($50). Lissabon $65 trotz Regulierung noch fair",
+    insight: "CDMX Airbnb $55/Nacht, Bangkok $50, Tokio $65 — alle unter Lissabon $75. USA $130 ist 2.5x mehr",
     data: gen({ prices: {
       usa:      { base: 130,   inflation: 0.055, season: "h_usa" },
       germany:  { base: 92,    inflation: 0.07,  season: "h_germany" },
       thailand: { base: 50,    inflation: 0.035, season: "h_thailand" },
-      japan:    { base: 60,    inflation: 0.04,  season: "h_japan" },     // ¥9000
-      mexico:   { base: 35,    inflation: 0.05,  season: "h_mexico" },    // 600 MXN
-      portugal: { base: 65,    inflation: 0.06,  season: "h_portugal" },  // €60
+      japan:    { base: 65,    inflation: 0.04,  season: "h_japan" },     // ¥9750
+      mexico:   { base: 55,    inflation: 0.05,  season: "h_mexico" },    // 950 MXN
+      portugal: { base: 75,    inflation: 0.06,  season: "h_portugal" },  // €70
     }, noise: 0.035 }),
   },
 
@@ -330,9 +330,9 @@ export const products: Product[] = [
       usa:      { base: 1.06,  inflation: 0.012, season: "f_summer" },
       germany:  { base: 1.25,  inflation: 0.018, season: "f_summer" },
       thailand: { base: 1.45,  inflation: 0.015, season: "f_thailand" },
-      japan:    { base: 1.45,  inflation: 0.025, season: "f_japan" },     // ¥215
-      mexico:   { base: 1.10,  inflation: 0.05,  season: "f_default" },   // 19 MXN
-      portugal: { base: 0.85,  inflation: 0.02,  season: "f_summer" },    // €0.79
+      japan:    { base: 1.65,  inflation: 0.025, season: "f_japan" },     // ¥250
+      mexico:   { base: 1.45,  inflation: 0.05,  season: "f_default" },   // 25 MXN
+      portugal: { base: 0.95,  inflation: 0.02,  season: "f_summer" },    // €0.88
     }, noise: 0.02 }),
   },
   {
@@ -355,14 +355,14 @@ export const products: Product[] = [
     name: "Rice (1kg)",
     nameDE: "Reis (1kg)",
     unit: "USD", category: "groceries",
-    insight: "Thailand + Japan: lokale Reiskulturen, Preise unter $1.50/kg. USA importiert teuer: $4.59",
+    insight: "Japan-Reis $4/kg (Koshihikari Premium) vs. Thailand $1.26 (Jasmin Export-Weltmarkt) — Qualität kostet",
     data: gen({ prices: {
       usa:      { base: 4.59,  inflation: 0.012, season: "f_summer" },
       germany:  { base: 2.40,  inflation: 0.018, season: "f_summer" },
       thailand: { base: 1.26,  inflation: 0.015, season: "f_thailand" },
-      japan:    { base: 1.50,  inflation: 0.025, season: "f_japan" },     // ¥225 (local koshihikari cheap)
-      mexico:   { base: 1.20,  inflation: 0.05,  season: "f_default" },   // 21 MXN
-      portugal: { base: 1.30,  inflation: 0.02,  season: "f_summer" },    // €1.20
+      japan:    { base: 4.00,  inflation: 0.025, season: "f_japan" },     // ¥600 koshihikari
+      mexico:   { base: 1.70,  inflation: 0.05,  season: "f_default" },   // 29 MXN
+      portugal: { base: 1.40,  inflation: 0.02,  season: "f_summer" },    // €1.30
     }, noise: 0.02 }),
   },
   {
@@ -376,8 +376,8 @@ export const products: Product[] = [
       germany:  { base: 9.70,  inflation: 0.018, season: "f_summer" },
       thailand: { base: 3.22,  inflation: 0.015, season: "f_thailand" },
       japan:    { base: 6.70,  inflation: 0.025, season: "f_japan" },     // ¥1000
-      mexico:   { base: 4.80,  inflation: 0.05,  season: "f_default" },   // 83 MXN
-      portugal: { base: 6.50,  inflation: 0.02,  season: "f_summer" },    // €6.00
+      mexico:   { base: 7.25,  inflation: 0.05,  season: "f_default" },   // 125 MXN
+      portugal: { base: 7.30,  inflation: 0.02,  season: "f_summer" },    // €6.75
     }, noise: 0.025 }),
   },
   {
@@ -390,9 +390,9 @@ export const products: Product[] = [
       usa:      { base: 4.38,  inflation: 0.15,  season: "f_summer" },
       germany:  { base: 3.40,  inflation: 0.02,  season: "f_summer" },
       thailand: { base: 1.62,  inflation: 0.015, season: "f_thailand" },
-      japan:    { base: 2.20,  inflation: 0.03,  season: "f_japan" },     // ¥330
-      mexico:   { base: 1.80,  inflation: 0.06,  season: "f_default" },   // 31 MXN
-      portugal: { base: 2.50,  inflation: 0.02,  season: "f_summer" },    // €2.30
+      japan:    { base: 2.00,  inflation: 0.03,  season: "f_japan" },     // ¥300
+      mexico:   { base: 3.20,  inflation: 0.06,  season: "f_default" },   // 55 MXN
+      portugal: { base: 2.80,  inflation: 0.02,  season: "f_summer" },    // €2.60
     }, noise: 0.03, seed: 42 }),
   },
 
@@ -402,14 +402,14 @@ export const products: Product[] = [
     name: "Taxi (1 km)",
     nameDE: "Taxi (1 km)",
     unit: "USD", category: "transport",
-    insight: "Mexiko $0.45/km, Thailand $0.18/km — Japan $3.10/km ist einer der teuersten Taxi-Märkte weltweit",
+    insight: "Japan $3.00/km — zweitteuerster Taxi-Markt nach UK. Thailand $0.18/km ist 17x günstiger",
     data: gen({ prices: {
       usa:      { base: 1.85,  inflation: 0.03,  season: "t_default" },
       germany:  { base: 2.40,  inflation: 0.04,  season: "t_default" },
       thailand: { base: 0.18,  inflation: 0.015, season: "t_default" },
-      japan:    { base: 3.10,  inflation: 0.02,  season: "t_default" },   // ¥460/km
-      mexico:   { base: 0.45,  inflation: 0.05,  season: "t_default" },   // 7.8 MXN
-      portugal: { base: 1.00,  inflation: 0.03,  season: "t_default" },   // €0.92
+      japan:    { base: 3.00,  inflation: 0.02,  season: "t_default" },   // ¥450/km
+      mexico:   { base: 1.15,  inflation: 0.05,  season: "t_default" },   // 20 MXN
+      portugal: { base: 0.70,  inflation: 0.03,  season: "t_default" },   // €0.65
     }, noise: 0.01 }),
   },
   {
@@ -417,13 +417,13 @@ export const products: Product[] = [
     name: "Monthly Public Transport Pass",
     nameDE: "Monatskarte ÖPNV",
     unit: "USD", category: "transport",
-    insight: "Lissabon Navegante $43/Monat — günstiger als Deutschlandticket $63. Tokio Suica hat kein echtes Monatsabo",
+    insight: "CDMX Metro $13/Monat — absurd günstig. Lissabon $43, DE $63. Japan $83 (Teiki-Pendler-Pass)",
     data: gen({ prices: {
       usa:      { base: 65,    inflation: 0.03,  season: "t_default" },
       germany:  { base: 56,    inflation: 0.18,  season: "t_default" }, // 49→58 EUR
       thailand: { base: 36.40, inflation: 0.02,  season: "t_default" },
-      japan:    { base: 67,    inflation: 0.02,  season: "t_default" },   // ¥10,000 teiki avg
-      mexico:   { base: 14,    inflation: 0.05,  season: "t_default" },   // 240 MXN CDMX
+      japan:    { base: 83,    inflation: 0.02,  season: "t_default" },   // ¥12,500 teiki avg
+      mexico:   { base: 13,    inflation: 0.05,  season: "t_default" },   // 220 MXN CDMX Metro
       portugal: { base: 43,    inflation: 0.03,  season: "t_default" },   // €40 Navegante
     }, noise: 0.005 }),
   },
@@ -447,14 +447,14 @@ export const products: Product[] = [
     name: "Ride-Hailing (5km)",
     nameDE: "Uber/Grab/DiDi (5km)",
     unit: "USD", category: "transport",
-    insight: "CDMX DiDi $2.50, Bangkok Grab $3.10 — Tokio hat kein Uber, Taxi kostet $18 für 5km",
+    insight: "CDMX DiDi $5, Bangkok Grab $3.10 — Tokio GO Taxi $10 für 5km, kein echtes Ridesharing",
     data: gen({ prices: {
       usa:      { base: 14,    inflation: 0.096, season: "t_default" },
       germany:  { base: 13.50, inflation: 0.05,  season: "t_default" },
       thailand: { base: 3.10,  inflation: 0.02,  season: "t_default" },
-      japan:    { base: 18,    inflation: 0.02,  season: "t_default" },   // ¥2700 taxi (no real ridehail)
-      mexico:   { base: 2.50,  inflation: 0.05,  season: "t_default" },   // 43 MXN DiDi
-      portugal: { base: 5.50,  inflation: 0.04,  season: "t_default" },   // €5 Bolt/Uber
+      japan:    { base: 10,    inflation: 0.02,  season: "t_default" },   // ¥1500 GO taxi app
+      mexico:   { base: 5.00,  inflation: 0.05,  season: "t_default" },   // 86 MXN DiDi/Uber
+      portugal: { base: 8.00,  inflation: 0.04,  season: "t_default" },   // €7.40 Bolt/Uber
     }, noise: 0.02 }),
   },
 ];
