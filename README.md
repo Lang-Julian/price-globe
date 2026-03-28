@@ -5,6 +5,10 @@
 Compare prices for hotels, restaurants, groceries, transport, and drinks across 6 countries. Find the cheapest months to travel, spot pricing anomalies, and make data-driven decisions.
 
 <p align="center">
+  <img src="docs/screenshot-hero.png" alt="Price Globe — Hotel price comparison chart" width="100%" />
+</p>
+
+<p align="center">
   <strong>🇺🇸 USA</strong> · <strong>🇩🇪 Germany</strong> · <strong>🇹🇭 Thailand</strong> · <strong>🇯🇵 Japan</strong> · <strong>🇲🇽 Mexico</strong> · <strong>🇵🇹 Portugal</strong>
 </p>
 
@@ -21,9 +25,15 @@ Most price comparison tools show static tables. Price Globe shows **price trends
 
 ## Features
 
+<details>
+<summary>Full page screenshot</summary>
+<img src="docs/screenshot-full.png" alt="Price Globe — Full page" width="600" />
+</details>
+
 - **6 Countries** — USA, Germany, Thailand, Japan, Mexico, Portugal
 - **5 Categories** — Gastronomy, Hotels, Groceries, Transport, Drinks
 - **20 Products** — From McMeals to 5-star hotels, each with 39 months of data
+- **Daily Budget Calculator** — What does a day cost? 3 tiers (Backpacker / Mid-range / Comfort) with stacked cost breakdown
 - **Travel Advisor** — Automatically surfaces the best deals by country and month
 - **Seasonal Patterns** — Real tourism cycles: cherry blossom pricing, monsoon discounts, Christmas market premiums
 - **Insights** — Per-product analysis with cheapest months, savings percentages, comparison bars
@@ -92,6 +102,7 @@ src/
 ├── components/
 │   ├── PriceChart.tsx      # Recharts ComposedChart with area fills
 │   ├── InsightCard.tsx     # Price analysis, cheapest months, bars
+│   ├── DailyBudget.tsx     # Budget calculator (3 tiers, stacked bars)
 │   ├── TravelAdvisor.tsx   # Smart deal recommendations
 │   ├── CategoryNav.tsx     # Category tabs
 │   ├── CountryToggle.tsx   # Country filter pills
