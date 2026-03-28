@@ -77,6 +77,7 @@ export default function PriceChart({ product, activeCountries, highlightMonth }:
                   <p className="text-zinc-500 text-[10px] uppercase tracking-widest mb-2">{label}</p>
                   <div className="space-y-1.5">
                     {[...payload]
+                      .filter((entry) => entry.type !== "none") // exclude Area duplicates
                       .sort((a, b) => (b.value as number) - (a.value as number))
                       .map((entry) => {
                         const country = entry.dataKey as Country;
@@ -101,7 +102,7 @@ export default function PriceChart({ product, activeCountries, highlightMonth }:
             <ReferenceLine x={formatMonth(highlightMonth)} stroke="#4ade80" strokeDasharray="6 4" strokeWidth={1.5} strokeOpacity={0.6} />
           )}
           {activeCountries.map((c) => (
-            <Area key={`a-${c}`} type="monotone" dataKey={c} fill={`url(#g-${c})`} stroke="none" />
+            <Area key={`a-${c}`} type="monotone" dataKey={c} fill={`url(#g-${c})`} stroke="none" tooltipType="none" />
           ))}
           {activeCountries.map((c) => (
             <Line

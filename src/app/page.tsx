@@ -8,6 +8,7 @@ import ProductSelector from "@/components/ProductSelector";
 import PriceChart from "@/components/PriceChart";
 import InsightCard from "@/components/InsightCard";
 import TravelAdvisor from "@/components/TravelAdvisor";
+import DailyBudget from "@/components/DailyBudget";
 
 export default function Home() {
   const [category, setCategory] = useState<Category>("hotel");
@@ -102,6 +103,9 @@ export default function Home() {
           activeCountries={activeCountries}
           onHighlightMonth={setHighlightMonth}
         />
+
+        {/* Daily Budget Calculator */}
+        <DailyBudget activeCountries={activeCountries} />
 
         {/* Travel Advisor */}
         <TravelAdvisor activeCountries={activeCountries} />
